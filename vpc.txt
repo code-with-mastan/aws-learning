@@ -1,0 +1,21 @@
+A VPC (Virtual Private Cloud) is a logically isolated private network environment in the cloud (like AWS, GCP, or Azure) where you can launch and manage your resources securely.
+
+Think of it as your own customizable data center inside the cloud.
+
+### Key Points about VPC:
+
+* Isolation → Your VPC is separate from others, even though it’s on shared cloud infrastructure.
+* Subnets → You divide your VPC into sub-networks (public and private) for better organization and security.
+* IP Addressing → You control the IP address range using CIDR blocks (e.g., `10.0.0.0/16`).
+* Routing → You define route tables to control traffic flow between subnets, the internet, and other networks.
+* Security → You use firewalls (security groups, network ACLs) to control inbound/outbound traffic.
+* Connectivity → You can connect your VPC to on-premise networks (via VPN or Direct Connect / Interconnect).
+* Internet Access → A public subnet uses an Internet Gateway, while private subnets may use a NAT Gateway for controlled outbound access.
+
+### Example:
+
+* In AWS, it’s called Amazon VPC.
+* In GCP, it’s Google VPC (global by default).
+* In Azure, it’s the Virtual Network (VNet) (similar concept).
+
+👉 In short: A VPC is your private cloud network where you run your resources securely with full control over networking.
